@@ -1,0 +1,110 @@
+/* PAGE - CART */
+
+/* MAIN */
+
+.main-cart {
+    .main-header {
+        @include main-header;
+    }
+
+    .cart-resume {
+        // width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2rem 0;
+
+        // Estilos para los productos en el carrito
+        .cart-item {
+            width: 375px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $fondo-color-carrito;
+            margin-bottom: 1.25rem;
+            padding: .625rem;
+
+            .item-image {
+                width: 80px;
+                height: 80px;
+                border: 1px solid $text-color-carrito;
+                border-radius: 8px;
+                margin-right: 1rem;
+            }
+
+            .item-details {
+                display: flex;
+                flex-direction: column;
+
+                .item-name {
+                    font-size: 1.125rem;
+                    margin-bottom: .375rem;
+                    color: $text-color-carrito;
+                }
+
+                .item-price {
+                    font-size: 1rem;
+                    color: $text-color-carrito;
+                    margin-bottom: .625rem;
+                }
+
+                .item-quantity {
+                    display: flex;
+                    align-items: center;
+
+                    .quantity {
+                        font-size: 1rem;
+                        color: $text-color-carrito;
+                        margin: 0 .625rem;
+                    }
+
+                    .quantity-btn {
+                        background-color: $text-color-carrito;
+                        color: $text-color-carrito-contraste;
+                        font-size: 1rem;
+                        border: none;
+                        padding: .3125rem .625rem;
+                    }
+                }
+            }
+
+            .remove-btn {
+                background-color: transparent;
+                color: $text-color-carrito;
+                font-size: 1.5rem;
+                border: none;
+            }
+        }
+
+
+
+        // Estilos para el resumen del carrito
+        .cart-summary {
+            background-color: $ColorFondo;
+            color: $ColorText;
+            padding: 1.25rem;
+            
+            h2 {
+                font-size: 1.25rem;
+                margin-bottom: 1rem;
+            }
+
+            .summary-details {
+                p {
+                    margin-bottom: .625rem;
+                    font-size: 1rem;
+
+                    &.total {
+                        font-weight: bold;
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+
+            .checkout-btn {
+                @include boton;
+                padding: .5rem 0;
+            }
+        }
+    }
+}

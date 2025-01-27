@@ -1,0 +1,91 @@
+/* PAGE - PRODUCTS */
+
+/* MAIN */
+.main-products {
+    .main-header {
+        @include main-header;
+        
+        .filters {
+            width: 150px;
+    
+            .form-select {
+                height: 100%;
+                border-radius: 25px;
+                border: 1px solid black;
+            }
+        }
+    }
+
+    .products-footer {
+        margin-bottom: 2rem;
+
+        .product-section {
+            display: flex;
+            flex-direction: column;
+        
+            .section-title {
+                text-align: left;
+                text-transform: uppercase;
+                color: black;
+                margin: 0;
+                padding: 1rem .5rem;
+            }
+        
+            .products-grid {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: .3rem;
+        
+                .product-card-link {
+                    color: $ColorTextFooter;
+                    text-decoration: none;
+        
+                    .product-card {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $ColorFondo2;
+                        border: 1px solid $ColorFondo;
+        
+                        .product-card-header {
+                            height: 170px;
+                            padding: 0;
+        
+                            .img-product {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+        
+                        .product-card-footer {
+                            height: 130px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: start;
+                            padding: .5rem;
+        
+                            .product-card-footer__price {
+                                font-size: 15px;
+                                font-weight: bold;
+                                margin-bottom: .5rem;
+                            }
+        
+                            .product-card-footer__title {
+                                font-size: 17px;
+                                text-align: left;
+                            }
+        
+                            .product-card-footer__descrit {
+                                font-size: 12px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

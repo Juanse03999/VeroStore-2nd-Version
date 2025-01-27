@@ -1,0 +1,93 @@
+/* PAGE - LOGIN-REGISTER */
+
+/* MAIN */
+.main-login-register {
+    .main-header {
+        @include main-header;
+    }
+
+    .login-register-footer {
+        margin: 2rem 0;
+
+        .form-container {
+            background-color: $fondo-color-formulario;
+            padding: 2rem;
+
+            .tabs {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+
+                .tab-button {
+                    font-size: 1rem;
+                    color: $text-color-formulario;
+                    cursor: pointer;
+                    border-bottom: 2px solid transparent;
+                    padding: .625rem;
+            
+                    &:hover {
+                        border-bottom: 2px solid $text-color-formulario;
+                    }
+                }
+            }
+
+            input[type="radio"] {
+                display: none;
+            }
+
+            // Mostrar el formulario correspondiente al radio button seleccionado
+            #login-tab:checked ~ #login,
+            #register-tab:checked ~ #register {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form {
+                display: none;
+        
+                h2 {
+                    color: $text-color-formulario;
+                    font-size: 1.5rem;
+                    margin-bottom: 0.8rem;
+                }
+        
+                input {
+                    width: 300px;
+                    border: none;
+                    border-radius: 25px;
+                    margin: 0 1rem 1rem 1rem;
+                    padding: .625rem;
+                }
+        
+                button {
+                    width: 120px;
+                    font-weight: 400;
+                    background-color: $fondo-color-boton-formulario;
+                    color: $text-color-boton-formulario;
+                    text-decoration: none;
+                    border: none;
+                    border-radius: 25px;
+                    padding: .625rem;
+                }
+            } 
+        }
+    }
+
+    /* Media Queries para tablet (600px y superior) */
+    @media (min-width: 600px) {
+        .login-register-footer {
+            .form-container {
+                .tabs {
+                    display: flex;
+                    justify-content: start !important;
+
+                    .tab-button {
+                        margin: 0 1rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+

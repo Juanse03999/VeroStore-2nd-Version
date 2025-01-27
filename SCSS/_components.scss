@@ -1,0 +1,55 @@
+
+
+// Mixin para footer 
+@mixin columna {
+    display: flex;
+    flex-direction: column;
+}
+
+// Mixins para header del main de las paginas.
+@mixin main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $ColorFondo;
+    padding: 1rem 0;
+
+    .main-header__top {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        h1 {
+            font-size: 25px;
+            text-transform: uppercase;
+            color: $ColorText;
+            margin: 0;
+        }  
+    }
+
+    .main-header__bot {
+        width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        
+        .back-btn {
+            @include boton;
+            padding: .2rem .8rem .2rem .1rem;
+
+            .bi-arrow-left-short {
+                height: 30px;
+            }
+        }
+    }
+}
+
+// Boton para las páginas
+@mixin boton {
+    width: 100px;
+    background-color: $fondo-color-boton;
+    color: $text-color-boton;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid black;
+}
