@@ -2,7 +2,7 @@
 
 /* HEADER */
 header {
-    /* Top section */
+    // Top section
     .carrusel-top {
         width: 100%;
         overflow: hidden;
@@ -32,7 +32,7 @@ header {
         }
     }
 
-    /* Barra de navegación */
+    // Bot section
     .navbar { 
         height: 60px;
         padding: 0 !important;
@@ -135,7 +135,7 @@ header {
         }
     }
 
-    /* Media Queries para Desktop (1024px y superior) */
+    // Media Queries para Desktop (1024px y superior)
     @media (min-width: 992px) {
 
         .navbar {
@@ -208,7 +208,7 @@ header {
 
 /* MAIN */
 main {
-    /* Top Section */
+    // Top Section
     .top-main {
         display: flex;
         justify-content: center;
@@ -236,7 +236,7 @@ main {
         }
     }
 
-    /* Mid Section */
+    // Mid Section
     .mid-main {
         display: flex;
         align-items: center;
@@ -280,7 +280,7 @@ main {
         }
     }
 
-    /* Bot Section */
+    // Bot Section
     .bot-main {
         display: flex;
         justify-content: center;
@@ -325,9 +325,9 @@ main {
         }
     }
 
-    /* Media Queries para tablet (600px y superior) */
+    // Media Queries para tablet (600px y superior)
     @media (min-width: 600px) {
-        /* Top Section */
+        // Top Section
         .top-main {
             background-color: $ColorFondo;
 
@@ -337,7 +337,7 @@ main {
             }
         }
 
-        /* Bot Section */
+        // Bot Section
         .bot-main {
             .categories {
                 grid-template-columns: repeat(3, 1fr);
@@ -351,9 +351,9 @@ main {
         }
     }
 
-    /* Media Queries para Desktop (1024px y superior) */
+    // Media Queries para Desktop (1024px y superior)
     @media (min-width: 1024px) {
-        /* Top Section */
+        // Top Section
         .top-main {
             background-color: $ColorFondo;
 
@@ -373,8 +373,7 @@ main {
 /* FOOTER */
 footer {
     color: $ColorTextFooter;
-
-        /* Top section */
+        // Top section
         .top-footer {
             background-color: $ColorFondo2;
             padding: 1rem;
@@ -424,10 +423,9 @@ footer {
             }
         }
 
-        /* Bot section */
+        // Bot section
         .bot-footer {
             background-color: $ColorFondo;
-            // border: none;
             padding: 1rem;
 
             p {
@@ -436,9 +434,9 @@ footer {
             }
         }
 
-        /* Media Queries para tablet (600px y superior) */
+        // Media Queries para tablet (600px y superior)
         @media (min-width: 600px) {
-            /* Top section */
+            // Top section
             .top-footer {
                 width: 100%;
                 display: flex;
@@ -451,7 +449,7 @@ footer {
             }
         }
 
-        /* Media Queries para Desktop (1024px y superior) */
+        // Media Queries para Desktop (1024px y superior)
         @media (min-width: 1024px) {
             
         }
