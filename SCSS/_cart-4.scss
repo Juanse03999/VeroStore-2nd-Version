@@ -8,15 +8,14 @@
     }
 
     .cart-resume {
-        // width: 100%;
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
         margin: 2rem 0;
 
         // Estilos para los productos en el carrito
         .cart-item {
-            width: 375px;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -80,6 +79,7 @@
 
         // Estilos para el resumen del carrito
         .cart-summary {
+            width: 100%;
             background-color: $ColorFondo;
             color: $ColorText;
             padding: 1.25rem;
@@ -104,6 +104,30 @@
             .checkout-btn {
                 @include boton;
                 padding: .5rem 0;
+            }
+        }
+    }
+
+    // Media Queries para tablet (600px y superior)
+    @media (min-width: 600px) {
+        .cart-resume {
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+
+            .cart-item {
+                width: 50vw;
+                justify-content: center;
+                margin: 0;
+
+                .item-details {
+                    margin: 0 2rem;
+                }
+            }
+
+            .cart-summary {
+                width: 50vw;
+                border-left: 1px solid $ColorFondo2;
             }
         }
     }

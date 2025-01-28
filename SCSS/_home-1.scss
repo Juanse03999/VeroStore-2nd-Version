@@ -129,13 +129,25 @@ header {
                     .my-account {
                         display: flex;
                         justify-content: center;
+
+                        .login__link {
+                            width: auto !important;
+                            display: flex;
+                            justify-content: space-between;
+                            @include boton;
+                            padding: .5rem 1rem;
+
+                            .icon-person-burguer {
+                                margin: 0 .5rem 0 0;
+                            }
+                        }
                     }
                 }
             }
         }
     }
 
-    // Media Queries para Desktop (1024px y superior)
+    // Media Queries para Desktop (992px y superior)
     @media (min-width: 992px) {
 
         .navbar {
@@ -363,7 +375,7 @@ main {
 
             .top-main__img {
                 height: 300px;
-                width: 100vw;
+                width: 90vw;
                 object-fit: cover;
             }
         }
