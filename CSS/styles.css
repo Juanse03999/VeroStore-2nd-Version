@@ -396,7 +396,6 @@ footer .bot-footer p {
   width: 300px;
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 .main-products .main-header .main-header__top h1 {
   font-size: 25px;
@@ -409,17 +408,8 @@ footer .bot-footer p {
   display: flex;
   justify-content: space-evenly;
 }
-.main-products .main-header .main-header__bot .back-btn {
-  width: 100px;
-  background-color: #fff;
-  color: #191919;
-  text-decoration: none;
-  border-radius: 25px;
-  border: 1px solid black;
-  padding: 0.2rem 0.8rem 0.2rem 0.1rem;
-}
-.main-products .main-header .main-header__bot .back-btn .bi-arrow-left-short {
-  height: 30px;
+.main-products .main-header .main-header__bot .filters {
+  margin-top: 1rem;
 }
 .main-products .main-header .filters {
   width: 150px;
@@ -504,7 +494,6 @@ footer .bot-footer p {
   width: 300px;
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 .main-login-register .main-header .main-header__top h1 {
   font-size: 25px;
@@ -517,17 +506,8 @@ footer .bot-footer p {
   display: flex;
   justify-content: space-evenly;
 }
-.main-login-register .main-header .main-header__bot .back-btn {
-  width: 100px;
-  background-color: #fff;
-  color: #191919;
-  text-decoration: none;
-  border-radius: 25px;
-  border: 1px solid black;
-  padding: 0.2rem 0.8rem 0.2rem 0.1rem;
-}
-.main-login-register .main-header .main-header__bot .back-btn .bi-arrow-left-short {
-  height: 30px;
+.main-login-register .main-header .main-header__bot .filters {
+  margin-top: 1rem;
 }
 .main-login-register .login-register-footer {
   margin: 2rem 0;
@@ -608,7 +588,6 @@ footer .bot-footer p {
   width: 300px;
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 .main-cart .main-header .main-header__top h1 {
   font-size: 25px;
@@ -621,17 +600,8 @@ footer .bot-footer p {
   display: flex;
   justify-content: space-evenly;
 }
-.main-cart .main-header .main-header__bot .back-btn {
-  width: 100px;
-  background-color: #fff;
-  color: #191919;
-  text-decoration: none;
-  border-radius: 25px;
-  border: 1px solid black;
-  padding: 0.2rem 0.8rem 0.2rem 0.1rem;
-}
-.main-cart .main-header .main-header__bot .back-btn .bi-arrow-left-short {
-  height: 30px;
+.main-cart .main-header .main-header__bot .filters {
+  margin-top: 1rem;
 }
 .main-cart .cart-resume {
   display: flex;

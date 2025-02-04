@@ -18,7 +18,7 @@
         width: 300px;
         display: flex;
         justify-content: center;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
 
         h1 {
             font-size: 25px;
@@ -32,14 +32,9 @@
         width: 300px;
         display: flex;
         justify-content: space-evenly;
-        
-        .back-btn {
-            @include boton;
-            padding: .2rem .8rem .2rem .1rem;
 
-            .bi-arrow-left-short {
-                height: 30px;
-            }
+        .filters {
+            margin-top: 1rem;
         }
     }
 }
