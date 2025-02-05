@@ -17,11 +17,15 @@
     }
 
     .products-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 2rem;
 
         .product-section {
             display: flex;
             flex-direction: column;
+            justify-content: center;
         
             .section-title {
                 text-align: left;
@@ -32,11 +36,19 @@
             }
         
             .products-grid {
+                // display: grid;
+                // justify-content: center;
+                // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                // gap: .3rem;
+
+                width: 100%;
+                max-width: 1200px; /* No se expande más allá de 900px */
                 display: grid;
-                justify-content: center;
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-                gap: .3rem;
-        
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+                gap: .5rem;
+                padding: 0 .5rem;
+
+
                 .product-card-link {
                     color: $ColorTextFooter;
                     text-decoration: none;
@@ -47,7 +59,7 @@
                         flex-direction: column;
                         background-color: $ColorFondo2;
                         border: 1px solid $ColorFondo;
-        
+
                         .product-card-header {
                             height: 170px;
                             padding: 0;
@@ -56,6 +68,7 @@
                                 height: 100%;
                                 width: 100%;
                                 object-fit: cover;
+                                overflow: hidden;
                             }
                         }
         
@@ -86,6 +99,43 @@
                     }
                 }
             }
+        }
+    }
+
+
+    /* Responsive: Para tablets (≥ 600px) */
+    @media (min-width: 600px) {
+
+        .main-header {
+            flex-direction: row;
+            justify-content: center;
+
+            .main-header__bot {
+                .filters {
+                    margin: 0;
+                }
+            }
+        }
+
+        .products-grid {
+            grid-template-columns: repeat(3, 1fr) !important; /* 3 columnas */
+        }
+    }
+
+    /* Responsive: Para pantallas grandes (≥ 900px) */
+    @media (min-width: 900px) {
+
+
+        
+        .products-grid {
+            grid-template-columns: repeat(4, 1fr) !important; /* 4 columnas */
+        }
+    }
+
+    /* Responsive: Para pantallas grandes (≥ 1200px) */
+    @media (min-width: 900px) {
+        .products-grid {
+            grid-template-columns: repeat(6, 1fr) !important; /* 6 columnas */
         }
     }
 }
