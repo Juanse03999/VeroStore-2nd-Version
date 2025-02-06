@@ -387,84 +387,81 @@ main {
 /* FOOTER */
 footer {
     color: $ColorTextFooter;
-        // Top section
-        .top-footer {
-            background-color: $ColorFondo2;
-            padding: 1rem;
 
-            h4 {
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                color: $ColorText;
-                margin-bottom: 1rem;
-            }
+    // Top section
+    .top-footer {
+        background-color: $ColorFondo2;
+        padding: 1rem;
 
-            .links, .contact, .social-networks {
-                @include columna;
+        h4 {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            color: $ColorText;
+            margin-bottom: 1rem;
+        }
 
-            }
+        .links, .contact, .social-networks {
+            @include columna;
 
-            .links {
-                a {
-                    color: $ColorTextFooter;
-                    text-decoration: none;
-                }
-            }
+        }
 
-            .contact {
-                margin-top: 1rem;
-
-                p {
-                    font-size: 1rem;
-                    margin-bottom: .5rem;
-                }
-            }
-
-            .social-networks {
-                align-items: center;
-                margin-top: 1rem;
-
-                .icons-networks {
-                    width: 250px;
-                    display: flex;
-                    justify-content: space-between;
-
-                    .bi-facebook, .bi-instagram , .bi-whatsapp, .bi-tiktok {
-                        height: 30px;
-                        color: $ColorTextFooter;
-                    }
-                }
+        .links {
+            a {
+                color: $ColorTextFooter;
+                text-decoration: none;
             }
         }
 
-        // Bot section
-        .bot-footer {
-            background-color: $ColorFondo;
-            padding: 1rem;
+        .contact {
+            margin-top: 1rem;
 
             p {
-                color: $ColorText;
+                font-size: 1rem;
+                margin-bottom: .5rem;
+            }
+        }
+
+        .social-networks {
+            align-items: center;
+            margin-top: 1rem;
+
+            .icons-networks {
+                width: 200px;
+                display: flex;
+                justify-content: space-between;
+                margin: 2.5rem 0;
+
+                .bi-facebook, .bi-instagram , .bi-whatsapp, .bi-tiktok {
+                    height: 30px;
+                    color: $ColorTextFooter;
+                }
+            }
+        }
+    }
+
+    // Bot section
+    .bot-footer {
+        background-color: $ColorFondo;
+        padding: 1rem;
+
+        p {
+            color: $ColorText;
+            margin: 0;
+        }
+    }
+
+    // Media Queries para tablet (600px y superior)
+    @media (min-width: 600px) {
+        // Top section
+        .top-footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+
+            .links, .contact, .social-networks {
                 margin: 0;
             }
         }
-
-        // Media Queries para tablet (600px y superior)
-        @media (min-width: 600px) {
-            // Top section
-            .top-footer {
-                width: 100%;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: start;
-
-                .links, .contact, .social-networks {
-                    margin: 0;
-                }
-            }
-        }
-
-        // Media Queries para Desktop (1024px y superior)
-        @media (min-width: 1024px) {
-            
-        }
+    }
 }
