@@ -154,9 +154,8 @@ header {
 
         .navbar {
             .container-nav {
-                justify-content: space-between; /* Asegura que los elementos estén separados */
+                justify-content: space-between;
                 box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
-                // padding: 0 1rem !important;
 
                 .icon-preset {
                     color: black;
@@ -164,7 +163,7 @@ header {
                 }
         
                 .container-nav__btn-open-menu {
-                    display: none; /* Oculta el botón de menú en pantallas grandes */
+                    display: none;
                 }
             
                 .container-nav__btn-open-menu {
@@ -211,7 +210,7 @@ header {
                         }
             
                         .my-account {
-                            display: none !important; /* Oculta "Mi cuenta" en pantallas grandes */
+                            display: none !important;
                         }
                     }
                 }
