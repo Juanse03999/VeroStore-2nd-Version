@@ -36,18 +36,12 @@
             }
         
             .products-grid {
-                // display: grid;
-                // justify-content: center;
-                // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                // gap: .3rem;
-
                 width: 100%;
-                max-width: 1200px; /* No se expande más allá de 900px */
+                max-width: 1200px;
                 display: grid;
-                grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+                grid-template-columns: repeat(2, 1fr);
                 gap: .5rem;
                 padding: 0 .5rem;
-
 
                 .product-card-link {
                     color: $ColorTextFooter;

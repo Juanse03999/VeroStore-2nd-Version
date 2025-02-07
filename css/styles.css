@@ -447,9 +447,9 @@ footer .bot-footer p {
 }
 .main-products .products-footer .product-section .products-grid {
   width: 100%;
-  max-width: 1200px; /* No se expande más allá de 900px */
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
   padding: 0 0.5rem;
 }
